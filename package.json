@@ -1,0 +1,28 @@
+{
+  "name": "smart-commit-template",
+  "version": "1.0.0",
+  "description": "Use branch name as commit template",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint index.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.init.de/dmorgenstern/smart-commit-template"
+  },
+  "keywords": [
+    "git",
+    "commit-template",
+    "vscode",
+    "branch",
+    "changelist"
+  ],
+  "author": "Daniel Morgenstern <daniel.morgenstern@init.de>",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2"
+  }
+}
