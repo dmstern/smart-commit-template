@@ -4,7 +4,7 @@
   "description": "Use branch name as commit template",
   "main": "index.js",
   "scripts": {
-    "test": "eslint index.js --fix"
+    "test": "eslint src/index.js --fix"
   },
   "repository": {
     "type": "git",
