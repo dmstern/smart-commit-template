@@ -1,0 +1,6 @@
+#!/bin/sh
+# .git/post-checkout
+# Writes the Jira Id + Jira summary to the git commit template from the recently checked out branch name.
+#########################################################################################################
+
+printf `git rev-parse --abbrev-ref HEAD | sed 's/-/❤/' | sed -E 's/[-|_]+/ /g' | sed 's/❤/-/'` > .git/.gitmessage.txt
