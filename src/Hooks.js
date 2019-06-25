@@ -8,7 +8,6 @@ const gitHookPath = path.resolve("./.git/hooks/"); // TODO: make configurable
 const hookTemplatePath = path.resolve("./hooks");
 
 const install = async function() {
-  // eslint-disable-next-line no-console
   console.log("Checking git hooks...");
   let hooks;
   try {
@@ -28,12 +27,10 @@ const install = async function() {
     try {
       await copyFile(path.join(hookTemplatePath, hook), filePath);
     } catch (error) {
-      // eslint-disable-next-line no-console
       console.error(`${filePath} was not written to .git/hooks.`);
       throw error;
     }
 
-    // eslint-disable-next-line no-console
     console.log(`Saved ${filePath}.`);
   });
 };

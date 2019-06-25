@@ -5,7 +5,6 @@ const getCommitTemplate = "git config --get commit.template";
 
 module.exports = {
   configure: async function() {
-    // eslint-disable-next-line no-console
     console.log("Checking git config commit.template...");
 
     try {
@@ -22,9 +21,7 @@ module.exports = {
         throw new Error(setTemplateReturn.stderr);
       }
 
-      // eslint-disable-next-line no-console
       console.log(setTemplateReturn.stdout);
-      // eslint-disable-next-line no-console
       console.log("Set .git/.gitmessage.txt as commit template.");
     }
   }
