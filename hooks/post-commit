@@ -1,0 +1,5 @@
+#!/bin/sh
+# Writes the last commit message into the git commit template.
+##############################################################
+
+printf `git log -1 --pretty=%s` > .git/.gitmessage.txt
