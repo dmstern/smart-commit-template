@@ -10,7 +10,9 @@
     "type": "git",
     "url": "https://gitlab.init.de/dmorgenstern/smart-commit-template"
   },
-  "bin": "src/index.js",
+  "bin": {
+    "smart-commit-template": "src/index.js"
+  },
   "keywords": [
     "git",
     "commit-template",
