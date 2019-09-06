@@ -1,5 +1,5 @@
 {
-  "name": "smart-commit-template",
+  "name": "@init/smart-commit-template",
   "version": "1.0.0",
   "description": "Use branch name as commit template",
   "main": "index.js",
@@ -9,6 +9,9 @@
   "repository": {
     "type": "git",
     "url": "https://gitlab.init.de/dmorgenstern/smart-commit-template"
+  },
+  "publishConfig": {
+    "registry": "https://artifactory.init.de/artifactory/api/npm/npm/"
   },
   "bin": {
     "smart-commit-template": "src/index.js"
