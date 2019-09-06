@@ -4,8 +4,8 @@ const fs = require("fs");
 const readdir = util.promisify(fs.readdir);
 const copyFile = util.promisify(fs.copyFile);
 
-const gitHookPath = path.resolve("./.git/hooks/"); // TODO: make configurable
-const hookTemplatePath = path.resolve("./hooks");
+const gitHookPath = path.resolve("./.git/hooks/");
+const hookTemplatePath = path.resolve(__dirname, "..", "hooks");
 
 const install = async function() {
   console.log("Checking git hooks...");
