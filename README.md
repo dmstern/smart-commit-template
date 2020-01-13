@@ -7,7 +7,7 @@ This allows VSCode to automatically remember your last entered commit message an
 ## Installation
 
 ```bash
-npm i -g @init/smart-commit-template
+npm i -g smart-commit-template
 ```
 
 ## Usage

@@ -1,17 +1,10 @@
 {
-  "name": "@init/smart-commit-template",
-  "version": "1.0.1",
-  "description": "Use branch name as commit template",
+  "name": "smart-commit-template",
+  "version": "1.0.0",
+  "description": "Use branch name as git commit template",
   "main": "index.js",
   "scripts": {
     "test": "eslint src/index.js --fix"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://gitlab.init.de/dmorgenstern/smart-commit-template"
-  },
-  "publishConfig": {
-    "registry": "https://artifactory.init.de/artifactory/api/npm/npm/"
   },
   "bin": {
     "smart-commit-template": "src/index.js"
@@ -21,9 +14,12 @@
     "commit-template",
     "vscode",
     "branch",
-    "changelist"
+    "changelist",
+    "vscode",
+    "code",
+    "commit"
   ],
-  "author": "Daniel Morgenstern <daniel.morgenstern@init.de>",
+  "author": "Daniel Morgenstern <morgenstern.daniel@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^5.16.0",
